@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* header */
+.header_login {
+    height: 50px;
+    background-color: black;
+    text-align: end;
+    font-size: 20px;
+    padding: 0 50px;
+    line-height: 50px;
+}
+
+.header_main {
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(60, 60, 60);
+}
+
+.header_title {
+    display: flex;
+    padding: 0 50px;
+    margin: 0;
+    align-items: center;
+}
+
+.header_nav {
+    margin: 0;
+}
+
+.header_nav ul {
+    display: flex;
+}
+
+.header_menu a {
+    font-size: 24px;
+}
+
+.header_menu ul {
+    flex-direction: column;
+    position: absolute;
+}
+
+
+
+.header_title img {
+    width: 60px;
+    height: 60px;
+    margin: 0;
+}
+
+.header_title h1 {
+    margin: 0 20px;
+}
+
+/* header========= */
+
+/* section */
+
+.container {
+    height: 100vh;
+    background : url(../img/jazzmain.png) no-repeat center;
+    background-size: cover;
+}
+
+.section_title {
+    width: 30%;
+    margin: 0;
+    text-align: center;
+}
+/* section==== */
