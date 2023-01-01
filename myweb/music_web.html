@@ -6,96 +6,104 @@
     <title>MusicTicket</title>
     <script src="https://kit.fontawesome.com/dd24ff9acb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/music_web.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js" defer></script>
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" defer></script>
+    <script src="./js/music_web.js" defer></script>
 </head>
 
 <body>
-    <div class="header_login">
-        <a href="#" class="login">Login</a>
-    </div>
     <!-- header -->
     <header class="header_main">
-        <div class="header_title">
-            <img src="./img/concert.png">
-            <h1>JazzTicket</h1>
+
+        <div class="header_login">
+            <a href="#" class="login">Login</a>
+            <i class="line"></i>
+            <a href="#" class="signup">Sign Up</a>
         </div>
-        <nav class="header_nav">
-            <ul>
-                <li class="header_menu">
-                    <a href="#" class="menu_title">main</a>
-                    <ul>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
-                    </ul>
-                </li>
 
-                <li class="header_menu">
-                    <a href="#" class="menu_title">main</a>
-                    <ul>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
-                    </ul>
-                </li>
+        <div class="header_sub">
+            <div class="header_title">
+                <img src="./img/concert.png">
+                <h1>JazzTicket</h1>
+            </div>
 
-                <li class="header_menu">
-                    <a href="#" class="menu_title">main</a>
-                    <ul>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
-                    </ul>
-                </li>
-
-                <li class="header_menu">
-                    <a href="#" class="menu_title">main</a>
-                    <ul>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
-                    </ul>
-                </li>
-
-                <li class="header_menu">
-                    <a href="#" class="menu_title">main</a>
-                    <ul>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+            <nav class="header_nav">
+                <ul>
+                    <li class="header_menu">
+                        <ul class="menu_main">
+                            <li><a href="#">main1</a></li>
+                            <li><a href="#">main2</a></li>
+                            <li><a href="#">main3</a></li>
+                            <li><a href="#">main4</a></li>
+                            <li><a href="#">main5</a></li>
+                        </ul>
+                        <div class="menu_sub">
+                            <ul>
+                                <li><a href="#">menu</a></li>
+                                <li><a href="#">menu</a></li>
+                                <li><a href="#">menu</a></li>
+                                <li><a href="#">menu</a></li>
+                                <li><a href="#">menu</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">menu</a></li>
+                                <li><a href="#">menu</a></li>
+                                <li><a href="#">menu</a></li>
+                                <li><a href="#">menu</a></li>
+                                <li><a href="#">menu</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">menu</a></li>
+                                <li><a href="#">menu</a></li>
+                                <li><a href="#">menu</a></li>
+                                <li><a href="#">menu</a></li>
+                                <li><a href="#">menu</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">menu</a></li>
+                                <li><a href="#">menu</a></li>
+                                <li><a href="#">menu</a></li>
+                                <li><a href="#">menu</a></li>
+                                <li><a href="#">menu</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">menu</a></li>
+                                <li><a href="#">menu</a></li>
+                                <li><a href="#">menu</a></li>
+                                <li><a href="#">menu</a></li>
+                                <li><a href="#">menu</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <!-- ==header== -->
 
     <!-- section -->
-    <section>
-        <div class="container">
-
-
-
-            <div class="section_title">
-                <h2>TITLE</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nobis vero distinctio ab
-                    architecto
-                    iusto et consequuntur at optio facere perspiciatis odio laborum vitae quidem sed praesentium, ad
-                    sunt ut?</p>
+    <section id="fullpage">
+        <div class='quick'>
+            <ul></ul>
+        </div>
+        <div class="fullsection full1" pageNum="1">
+            <div class="section_body">
+                <div class="section_title">
+                    <p id="subhead">J A Z Z M U S I C</p>
+                    <h2>JAZZ</h2>
+                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nobis vero
+                        distinctio ab
+                        architecto
+                        iusto et consequuntur at optio facere perspiciatis odio laborum vitae quidem sed praesentium, ad
+                        sunt ut?</p>
+                </div>
             </div>
         </div>
+        <div class="fullsection full2" pageNum="2">
 
+        </div>
     </section>
     <!-- ==section== -->
 </body>
-
 </html>
