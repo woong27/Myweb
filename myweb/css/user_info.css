@@ -1,0 +1,50 @@
+.info_body {
+    display: flex;
+}
+
+.main_nav {
+    margin: 0;
+    flex-grow: 0;
+}
+
+.check_section {
+    margin: 0;
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+.login_body {
+    border: 1px solid white;
+    padding: 0 50px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 15px white;
+}
+
+.login_body div {
+    padding: 5px 0;
+}
+
+.signup_sub input{
+    width: 425px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.button {
+    width: 425px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    border: 1px solid white;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.2s all;
+}
