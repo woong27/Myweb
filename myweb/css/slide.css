@@ -29,15 +29,15 @@
     background-color: black;
 }
 
-img {
+.slideshow img {
     margin-top: 50px;
     height: 380px;
-    width: 250px;
+    width: 250px;  
 }
 
 .slideshow img:hover {
-    height: 450px;
-    width: 340px;
+    height: 400px;
+    width: 270px;
     transition: 0.2s all;
 }
 

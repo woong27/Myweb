@@ -1,5 +1,138 @@
-
-form {
+section {
+    height: 100vh;
     background-color: black;
     color: white;
+    display: flex;
+    /* align-items: center; */
 }
+
+section .error{
+    color: red;
+    text-align: center;
+}
+
+section .success{
+    color: green;
+    text-align: center;
+}
+
+.signup_title {
+    font-size: 40px;
+    text-align: center;
+}
+
+.signup_body {
+    border: 1px solid white;
+    padding: 0 50px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 15px white;
+}
+
+.signup_body div {
+    padding: 1px 0;
+}
+/* id */
+.signup_id {
+    margin-top: 30px;
+}
+
+.signup_id label {
+    font-size: 25px;
+}
+
+.input_id2  {
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.check {
+    height: 42px;
+    width: 75px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.check:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    transition: 0.2s all;
+}
+
+.signup_sub label{
+    font-size: 25px;
+}
+
+.signup_sub input{
+    width: 425px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+/* button */
+
+
+.signup_btn {
+    width: 425px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    border: 1px solid white;
+}
+
+.signup_btn:hover {
+    background-color: white;
+    color: black;
+    transition: 0.2s all;
+}
+
+
+/* Login form =========================================*/
+.login_section{
+    display: flex;
+    align-items: center;
+}
+
+.login_title {
+    font-size: 40px;
+    text-align: center;
+}
+
+.login_body {
+    border: 1px solid white;
+    padding: 0 50px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 15px white;
+}
+
+.login_body div {
+    padding: 5px 0;
+}
+
+.login_id {
+    width: 425px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.button {
+    width: 425px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    border: 1px solid white;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.2s all;
+}
+  
