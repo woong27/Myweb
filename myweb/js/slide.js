@@ -82,5 +82,5 @@ function call_js() {
         gotoSlide(i);
       });
     }
-  }
+}
   
