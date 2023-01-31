@@ -59,10 +59,3 @@ function reset_form(){
     document.sign_up_form.user_id.focus();
     return;
 }
-
-//아이디 중복 확인
-
-function check_id(){
-    window.open("sign_up_check.php?id=" + document.sign_up_form.user_id.value,
-    "IDcheck", "left=700,top=300,width=350,height=200,scrollbars=no, location=no");
-}

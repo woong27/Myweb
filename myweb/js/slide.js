@@ -30,7 +30,7 @@ function call_js() {
       timer = setInterval(function () {
         let nextIndex = (currentIndex + 1) % slideCount;
         gotoSlide(nextIndex);
-      }, 4000);
+      }, 3000);
     }
   
     startTimer();
