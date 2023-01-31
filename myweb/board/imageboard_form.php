@@ -7,17 +7,17 @@
   <link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST']?>/Web_project/myweb/css/board.css">
   <script>
   function check_input() {
-    if (!document.board_form.subject.value) {
+    if (!document.imageboard_form.subject.value) {
       alert("제목을 입력하세요!");
-      document.board_form.subject.focus();
+      document.imageboard_form.subject.focus();
       return;
     }
-    if (!document.board_form.content.value) {
+    if (!document.imageboard_form.content.value) {
       alert("내용을 입력하세요!");
-      document.board_form.content.focus();
+      document.imageboard_form.content.focus();
       return;
     }
-    document.board_form.submit();
+    document.imageboard_form.submit();
   }
   </script>
 </head>
@@ -28,30 +28,32 @@
   </header>
   <section class="board_section">
       <!-- enctype="multipart/form-data" 이것을 하지 않으면 파일업로드 되지 않음 : 명심 -->
-      <form name="imageboard_form" method="post" action="imageboard_dml.php" enctype="multipart/form-data">
+      <form name="imageboard_form" method="post" action="imageboard_DUI.php" enctype="multipart/form-data">
         <input type="hidden" name="mode" value="insert">
+        <p class="board_title">COMMUNITY</p>
         <div class="board_body">
-          <div class="nickname">
-            <p>작성자 : <?=$user_nick?></p>
+          <div class="board_menu">
+            <p class="menu nick">작성자</p>
+            <p class="menu title">제목(필수)</p>
+            <p class="menu content">내용(필수)</p>
+            <p class="menu file">첨부파일</p>
           </div>
-          <div class="input_title">
-            <p>제목</p>
-            <input name="subject" type="text">
+          <div class="board_content">
+            <p class="main nick"><?=$user_nick?></p>
+            <p class="main title"><input name="subject" type="text"></p>
+            <p class="main content"><textarea name="content"></textarea></p>
+            <p class="main file"><input type="file" name="upfile"></p>
           </div>
-          <div class="input_content">
-            <p>내용</p>
-            <textarea name="content"></textarea>
-          </div>
-          <div class="input_phoot">
-            <input type="file" name="upfile">
-          </div>
-          <div class="buttons">
-            <button type="button" onclick="check_input()">등록</button>
-            <button type="button" onclick="location.href='imageboard_list.php'">취소</button>
-          </div>
+        </div>
+        <div class="board_button">
+          <button type="button" onclick="location.href='imageboard_list.php'">취소</button>
+          <button type="button" onclick="check_input()">작성</button>
         </div>
       </form>
   </section>
+  <footer>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/Web_project/myweb/form/footer.php"?>
+  </footer>
 </body>
 
 </html>
