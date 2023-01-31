@@ -1,0 +1,236 @@
+body {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+/* amdin */
+.member_body{
+    width: 800px;
+    margin: 0 0 0 30px;
+}
+
+.board_body{
+    width: 800px;
+    margin: 0 0 0 30px;
+}
+
+.concert_body2 {
+    width: 1120px;
+    margin: 0 0 100px 30px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px 10px;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+.info_body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.check_section2 {
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+}
+
+.check_section2::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: rgb(0, 0, 0);
+}
+
+.check_section2::-webkit-scrollbar-thumb {
+    background: rgb(49, 21, 135);
+    border-radius: 1em;
+}
+
+.admin_box {
+    overflow: hidden;
+}
+
+th {
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
+
+.board_table {
+    width: 780px;
+}
+
+.member_title {
+    padding-top: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.member_title h3 {
+    margin: 0;
+}
+
+.button_delete{
+    padding: 5px 20px;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+.button_delete:hover{
+    padding: 5px 20px;
+    color: rgb(49, 21, 135);
+}
+
+.col1 {
+    background-color: rgb(39, 39, 39);
+}
+
+.col_button button {
+    background-color: black;
+    color: white;
+}
+
+.col_button button:hover {
+    color: rgb(49, 21, 135);
+}
+
+/* amdin ===============*/
+
+/* amdin_con */
+.main_nav {
+    height: 850px;
+    background-color: rgb(39, 39, 39);
+}
+
+.concert_section{
+    color: white;
+    margin: 0 auto;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+}
+
+.concert_section::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: rgb(0, 0, 0);
+}
+
+.concert_section::-webkit-scrollbar-thumb {
+    background: rgb(49, 21, 135);
+    border-radius: 1em;
+}
+
+.concert_title {
+    width: 770px;
+    padding: 20px 0;
+    color: rgb(134, 134, 134);
+}
+
+.concert_body {
+    display: flex;
+    justify-content: center;
+}
+
+.day_body {
+    display: flex;
+}
+
+.concert_menu {
+    text-align: center;
+    background-color: rgb(51, 51, 51);
+    border-right: 1px solid rgb(184, 184, 184);
+    margin: 0;
+}
+
+.concert_menu li {
+    width: 200px;
+    font-size: 20px;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.concert_menu .image {
+    padding-top: 175px;
+}
+
+.input_menu {
+    padding: 0 30px;
+    background-color: rgb(119, 119, 119);
+    margin: 0;
+}
+
+.input_menu li {
+    padding: 13px 0;
+}
+
+.input_menu input {
+    width: 500px;
+    height: 40px;
+}
+
+select {
+    width: 500px;
+    height: 40px;
+}
+
+.input_menu textarea {
+    width: 500px;
+    height: 200px;
+}
+
+.day_body li {
+    margin: 0;
+}
+
+.day_body input{
+    width: 250px;
+}
+
+.con_button {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.con_button input {
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(61, 61, 61);
+}
+
+.con_button input:hover {
+    padding: 10px 30px;
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(61, 61, 61);
+}
+/* amdin_con ============= */
+
+/* reser_form*/
+.reser_title h1 {
+    color: white;
+    padding: 20px;
+}
+
+.reser_box {
+    padding: 0 20px;
+    font-size: 13px;
+}
+/* reser_form ============= */
+
+/* mywriting */
+.check_writing a {
+    color: white;
+}
+
+/* mywriting============== */

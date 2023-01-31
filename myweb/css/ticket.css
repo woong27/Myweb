@@ -1,0 +1,215 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+/* reservation list */
+.ticket_title {
+    width: 300px;
+    color: rgb(126, 126, 126);
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 0 0 20px;
+}
+
+.ticket_one {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ticket_main {
+    margin: 0;
+    width: 250px;
+    text-align: center;
+    padding: 20px 25px;
+    border: 1px solid rgb(160, 160, 160);
+    margin: 20px 10px;
+}
+
+.ticket_main h4 {
+    text-overflow : ellipsis;
+    white-space : nowrap;
+    overflow : hidden;
+    color: white;
+}
+
+.ticket_main small {
+    color: rgb(146, 146, 146);
+}
+
+img {
+    width: 200px;
+    height: 300px;
+}
+
+.page_button li{
+    text-align: center;
+    color: white;
+}
+
+/* reservation list ==================== */
+
+/* reservation view */
+.ticket_body {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.ticket_content {
+    margin: 0;
+    width: 900px;
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ticket_top {
+    padding-left: 10px;
+    margin: 0;
+}
+
+.ticket_top h1{
+    font-size: 30px;
+}
+
+.ticket_top p{
+    color: rgb(209, 209, 209);
+    padding-top: 20px;
+}
+
+table {
+    margin: 0;
+}
+
+th,td {
+    text-align: start;   
+    padding: 10px 10px;
+    color: rgb(121, 121, 121);
+}
+
+td {
+    color: rgb(209, 209, 209);
+}
+
+.view_img {
+    margin: 0;
+}
+
+.view_img img {
+    width: 200px;
+    height: 300px;
+}
+
+.ticket_button {
+    width: 1100px;
+    display: flex;
+    height: 100px;
+    align-items: center;
+}
+
+.ticket_button h1 {
+    color: rgb(97, 97, 255);
+}
+
+.ticket_button span {
+    color: rgb(146, 146, 146);
+}
+
+.ticket_button button {
+    padding: 15px 80px;
+    background-color: rgb(223, 223, 223);
+}
+
+.ticket_button button:hover {
+    background-color: white;
+}
+
+.ticket_end {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.ticket_end ul {
+    margin: 0;
+}
+
+.end_menu {
+    background-color: rgb(39, 39, 39);
+    padding: 15px 20px;
+    border: 1px solid rgb(54, 54, 54);
+}
+
+.end_menu li {
+    padding: 10px 0;
+}
+
+.end_content {
+    width: 900px;
+    background-color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    border: 1px solid rgb(54, 54, 54);
+}
+
+.end_content li{
+    padding: 10px 0;
+}
+/* reservation view ====================*/
+/* reservation main*/
+.reservation_title {
+    text-align: center;
+}
+
+.reservation_title h1 {
+    font-size: 30px;
+    color: rgb(131, 131, 131);
+    padding: 30px 0;
+}
+.reservation_body {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.reservation_poster {
+    margin: 0;
+    padding: 100px 10px;
+    width: 210px;
+}
+
+.reservation_menu {
+    margin: 0;
+    display: flex;
+    padding: 20px;
+}
+
+.reservation_main li{
+    padding: 25px 0;
+    height: 80px;
+}
+
+.reservation_input li {
+    padding: 25px 0 22px 30px;
+}
+
+.reservation_input input {
+    width: 450px;
+    height: 35px;
+}
+
+.reser_button {
+    text-align: center;
+}
+
+.reser_btn {
+    padding: 10px 50px;
+    background-color: rgb(194, 194, 194);
+}
+
+.reser_btn:hover {
+    background-color: white;
+}
+
+/* reservation main===============================*/

@@ -1,0 +1,202 @@
+body {
+    background-color: black;
+}
+
+section {
+    background-color: black;
+    color: white;
+    
+}
+
+/* message_form */
+
+.message_title {
+    padding: 20px 0;
+    width: 700px;
+    border-bottom: 1px solid rgb(95, 95, 95);
+}
+
+.message_section {
+    width: 700px;
+}
+
+.list_menu {
+    text-align: end;
+    padding: 10px 0;
+}
+
+.list_menu a {
+    color: rgb(131, 131, 131);
+}
+
+.list_menu a:hover {
+    color: aqua;
+}
+
+.menu_body{
+    display: flex;
+}
+
+.message_menu {
+    margin: 0;
+}
+
+.message_menu p {
+    padding: 13px 0;
+}
+
+.message_content {
+    margin: 0;
+}
+
+.message_content p {
+    padding: 10px 10px 8px;
+}
+
+.message_content .input_id {
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+.message_content input {
+    width: 600px;
+    height: 30px;
+}
+
+.message_content textarea {
+    width: 600px;
+    height: 200px;
+}
+
+.board_button {
+    text-align: center;
+    margin: 30px 0 0 40px;
+}
+
+.board_button button {
+    padding: 5px 50px;
+}
+
+.board_button button:hover {
+    background-color: white;
+}
+
+/* message_form================== */
+
+/* message_list */
+
+.list_title {
+    font-size: 25px;
+    color: rgb(98, 98, 98);
+    font-weight: bold;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.list_title h3 {
+    margin: 0;
+}
+
+.button_menu {
+    margin: 0;
+}
+
+.message_button {
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+table, th, td {
+    border-top: 1px solid rgb(53, 53, 53);
+    border-bottom: 1px solid rgb(53, 53, 53);
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    padding: 15px 0;
+    background-color: rgb(53, 53, 53);
+}
+
+td {
+    padding: 13px 30px;
+}
+
+.table_item {
+    padding: 0 200px;
+}
+
+.table_item a {
+    color: white;
+}
+
+.message_page {
+    text-align: center;
+    padding: 50px 0;
+}
+
+
+
+/* message_list================== */
+
+/* message_view */
+.message_view {
+    display: flex;
+    width: 800px;
+    padding: 30px 0;
+    justify-content: space-between;
+}
+
+.title_body {
+    margin: 0;
+}
+
+.message_viewbutton {
+    margin: 0;
+}
+
+.message_viewbutton button{
+    background-color: black;
+    color: white;
+}
+
+.message_viewbutton button:hover{
+    color: aqua;
+}
+
+.view_content {
+    width: 800px;
+}
+
+.view_content li {
+    padding: 10px 0;
+}
+
+.view_content .num3 {
+    height: 350px;
+    border-top: 1px solid rgb(75, 75, 75);
+    border-bottom: 1px solid rgb(75, 75, 75);
+}
+/* message_view================== */
+
+/* message_reply_form */
+.message_box {
+    display: flex;
+    flex-direction: column;
+}
+
+.write_title {
+    padding: 20px 0;
+}
+
+.write_msg li {
+    padding: 10px 0;
+}
+
+.text_area {
+    align-items: baseline;
+}
+/* message_reply_form================== */
