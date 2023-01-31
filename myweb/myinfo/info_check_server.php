@@ -26,9 +26,8 @@ if(isset($_POST['user_id'])){
 
         //hash 값을 비교하기 위한 방법
         if(password_verify($pass, $hash_value)){
-            
-            header("location: http://{$_SERVER['HTTP_HOST']}/Web_project/myweb/myinfo/info_modify_form.php");
-            exit();
+                header("location: http://{$_SERVER['HTTP_HOST']}/Web_project/myweb/myinfo/info_modify_form.php");
+                exit();
         }else {
             header("location: info_check.php?error=패스워드 확인 실패");
             exit();

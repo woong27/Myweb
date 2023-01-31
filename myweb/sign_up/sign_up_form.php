@@ -35,7 +35,6 @@ if (isset($_GET['success'])) {
                     </div>
                     <div class="input_id">
                         <input class="input_id2" type="text" name="user_id" placeholder="ID">
-                        <input class="check" type="button" value="Check" placeholder="ID" onclick="check_id()">
                     </div>
                 </div>
 
@@ -46,7 +45,7 @@ if (isset($_GET['success'])) {
                         </div>
     <?php
 if (isset($_GET['user_nick'])) {
-    $user_nick = $_GET['nick'];
+    $user_nick = $_GET['user_nick'];
     echo "<div><input class='input_nick' type='text' placeholder = 'Nickname' name='user_nick' value={$user_nick}>
                 </div>";
 } else {
@@ -110,5 +109,8 @@ if (isset($_GET['user_nick'])) {
             </div> <!-- signup_body -->
         </form>
     </section>
+    <footer>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . "/Web_project/myweb/form/footer.php"?>
+    </footer>
 </body>
 </html>

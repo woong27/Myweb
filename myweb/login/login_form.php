@@ -56,5 +56,8 @@ if (isset($_GET['success'])) {
             </div> <!-- signup_body -->
         </form>
     </section>
+    <footer>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . "/Web_project/myweb/form/footer.php"?>
+    </footer>
 </body>
 </html>

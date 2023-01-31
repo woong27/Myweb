@@ -17,8 +17,6 @@
             <?php include $_SERVER['DOCUMENT_ROOT'] . "/Web_project/myweb/myinfo/info_nav_form.php"?>
         </nav>
 
-
-
         <section class="check_section">
             <form action="http://<?= $_SERVER['HTTP_HOST']?>/Web_project/myweb/myinfo/info_check_server.php" method="post" name="info_check">
                 <div class="login_body">

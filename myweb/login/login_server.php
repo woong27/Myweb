@@ -38,6 +38,7 @@ if(isset($_POST['user_id']) && isset($_POST['pass'])){
             if(password_verify($pass, $hash_value)){
                 $_SESSION["user_id"] = $row["id"];
                 $_SESSION["user_nick"] = $row["nick"];
+                $_SESSION["user_level"] = $row["level"];
                 
                 header("location: http://{$_SERVER['HTTP_HOST']}/Web_project/myweb/music_web.php");
                 exit();

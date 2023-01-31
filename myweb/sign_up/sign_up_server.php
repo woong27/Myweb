@@ -57,11 +57,11 @@ isset($_POST['pass1']) && isset($_POST['pass2']) && isset($_POST['email']) && is
             header("location: sign_up_form.php?error=아이디와 닉네임이 존재합니다.&$user_info");
             exit();
         }else{
-            $sql_insert = "insert into members(id, nick, pass, phone, email, regist_day) values('$user_id', '$user_nick', '$pass1', '$phone', '$email', '$regist_day')";
+            $sql_insert = "insert into members(id, nick, pass, phone, email, level, regist_day) values('$user_id', '$user_nick', '$pass1', '$phone', '$email', 2, '$regist_day')";
             $result = mysqli_query($con, $sql_insert);
 
             if($result){
-                header("location: sign_up_form.php?success=성공적으로가입완료");
+                header("location: ../login/login_form.php?success=성공적으로가입완료");
                 exit();
             }else {
                 header("location: sign_up_form.php?error=가입에 실패했습니다&$user_info");
