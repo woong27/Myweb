@@ -1,3 +1,7 @@
+body {
+    background-color: black;
+}
+
 section {
     height: 100vh;
     background-color: black;
@@ -41,7 +45,7 @@ section .success{
 }
 
 .input_id2  {
-    width: 350px;
+    width: 425px;
     height: 40px;
     border-radius: 5px;
 }

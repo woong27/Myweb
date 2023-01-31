@@ -1,52 +1,226 @@
-.board_section {
+body {
+    background-color: black;
+}
+
+section {
     height: 100vh;
     background-color: black;
+    color: white;
     display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
     color: white;
 }
+/* imageboard_form */
+.board_title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
 .board_body {
-    border: 1px solid white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 15px white;
-    margin-top: 30px;
+    display: flex;
+    border: 1px solid rgb(113, 113, 113);
 }
 
-.board_body div {
-    padding: 10px 0;
+.board_body div{
+    margin: 0;  
 }
-.nickname {
-    width: 500px;
-    font-size: 24px;
+
+.board_menu {
     text-align: center;
+    width: 200px;
+    background-color: rgb(17, 17, 17);
 }
 
-.input_title input {
-    width: 450px;
-    height: 35px;
+.menu.nick {
+    padding: 20px 0 0;
 }
 
-.input_content textarea {
-    width: 450px;
-    height: 300px;
+.menu.title {
+    padding: 20px 0 25px;
 }
 
-.buttons {
-    text-align: center;
+.menu.file {
+    padding: 350px 0 30px;
 }
 
-.buttons button{
-    width: 150px;
+.board_content {
+    padding: 0 30px 0 20px;
+}
+
+.main.nick {
+    padding: 18px 0 0;
+}
+
+.main.title {
+    padding: 20px 0;
+}
+
+.main.file {
+    padding: 64px 0 30px;
+}
+
+.main input{
     height: 30px;
+    width: 700px;
+}
+
+.main textarea {
+    height: 300px;
+    width: 700px;
+}
+
+.board_button {
+    text-align: center;
+}
+
+.board_button button {
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
     background-color: black;
     color: white;
     border: 1px solid white;
+}
+
+.board_button button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* imageboard_form======== */
+
+/* imageboard_list */
+section {
+    background-color: black;
+    height: 100%;
+}
+
+.top_body {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_title {
+    font-size: 30px;
+    margin: 0 0 0 50px;
+}
+
+.buttons{
+    margin: 0 140px 0 0;
+}
+
+.buttons button {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 30px;
 }
 
 .buttons button:hover {
     background-color: white;
-    border: 1px solid rgb(43, 43, 43);
     color: black;
 }
 
+.board_list {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
 
+.board_list li {
+    margin: 30px;
+}
+
+#page_num {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+#page_num span {
+    color: white;
+}
+/* imageboard_list======== */
+
+/* imageboard_view */
+.view_body {
+    height: 100vh;
+}
+
+.button_menu li{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn_menu{
+    color: white;
+    background-color: black;
+    padding: 0 5px;
+}
+
+.btn_menu:hover{
+    color: aqua;
+}
+
+.button_menu button, form {
+    margin: 0;
+}
+
+#ripple1 {
+    margin-top: 20px;
+}
+/* imageboard_view======= */
+
+/* imageboard_modify */
+.modify_title {
+    padding: 20px 0 0;
+    border-bottom: 1px solid rgb(102, 102, 102);
+}
+
+.modify_form {
+    padding: 10px 0;
+}
+
+.modify_title2 {
+    padding: 10px 0;
+}
+
+.modify_title2 input {
+    width: 600px;
+    height: 35px;
+}
+
+.text_area {
+    padding: 10px 0;
+    display: flex;
+}
+
+.text_area textarea {
+    width: 600px;
+    height: 200px;
+}
+
+.modify_btn {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.modify_btn button {
+    margin: 0;
+    padding: 5px 60px;
+    background-color: rgb(214, 214, 214);
+}
+
+.modify_btn button:hover {
+    background-color: white;
+}
+
+/* imageboard_modify======= */
