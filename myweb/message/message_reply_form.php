@@ -62,26 +62,20 @@
 				<input type="hidden" name="rv_id" value="<?=$send_id?>">
 				<input type="hidden" name="send_id" value="<?=$user_id?>">
 				<div class="write_msg">
-					<ul>
-						<li>
-							<span class="col1">보내는 사람 : </span>
-							<span class="col2"><?=$user_id?></span>
-						</li>	
-						<li>
-							<span class="col1">수신 아이디 : </span>
-							<span class="col2"><?=$send_name?>(<?=$send_id?>)</span>
-						</li>	
-						<li>
-							<span class="col1">제목 : </span>
-							<span class="col2"><input name="subject" type="text" value="<?=$subject?>"></span>
-						</li>	    	
-						<li class="text_area">	
-							<span class="col1">글 내용 : </span>
-							<span class="col2">
-								<textarea name="content"><?=$content?></textarea>
-							</span>
-						</li>
+					<ul class="write_menu">
+						<li>보내는 사람 : </li>
+						<li>수신 아이디 : </li>
+						<li>제목 : </li>
+						<li>글 내용 : </li>
 					</ul>
+					<ul class="write_contnet">
+						<li class="no1"><?=$user_id?></li>
+						<li class="no2"><?=$send_name?>(<?=$send_id?>)</li>
+						<li class="no3"><input name="subject" type="text" value="<?=$subject?>"></li>
+						<li class="no4"><textarea name="content"><?=$content?></textarea></li>
+					</ul>
+				</div>
+				<div class="write_button">
 					<button type="button" onclick="check_input()">보내기</button>
 				</div>
 			</form>
