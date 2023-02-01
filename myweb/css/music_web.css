@@ -26,12 +26,12 @@ html,body {
 
 .header_login {
     height: 50px;
-    background-color: rgb(17, 17, 17);
+    background-color: #041436;
     text-align: end;
     font-size: 20px;
     padding: 0 60px;
     line-height: 50px;
-    border-bottom: 1px solid rgb(17, 17, 17);
+    border-bottom: 1px solid #041436;
 }
 
 .signup {
@@ -124,7 +124,7 @@ html,body {
 }
 
 .menu_main a:hover {
-    color: aqua;
+    color: #041436;
 }
 
 
@@ -222,33 +222,52 @@ ul, li{
     background-size: cover;
 }
 
-.full3 .full3_menubody {
-    height: 100vh;
+.full3_body{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
+.content_body {
+    flex-grow: 1;
+}
+
+.full3_title {
+    text-align: center;
+    font-size: 50px;
+}
+
+.full3_content {
+    text-align: center;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.full3 .full3_menubody {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
 .full3 .full3_resermenu {
-    border: 1px solid rgb(95, 95, 95);
     box-shadow: 5px 5px 10px black;
-    width: 330px;
+    width: 280px;
     height: 330px;
-    margin: 0;
-    background-color: rgb(95, 95, 95);
+    margin: 0 20px 0 0;
+    background-color: #041436;
     color: black;
     border-radius: 10px;
-    opacity: 0.8;
     text-align: center;
     transition: 0.5s all;
 }
 
 .full3 .full3_resermenu:hover {
-    border: 1px solid rgb(136, 136, 136);
-    width: 340px;
+    width: 280px;
     height: 340px;
     box-shadow: 10px 10px 15px black;
-    background-color: rgb(189, 189, 189);
+    background-color: #041436;
     color: white;
     opacity: 1;
 }
@@ -258,26 +277,23 @@ ul, li{
 }
 
 .full3 .full3_boardmenu {
-    border: 1px solid rgb(95, 95, 95);
     box-shadow: -5px 5px 10px black;
-    width: 330px;
+    width: 280px;
     height: 330px;
-    margin: 0;
-    background-color: rgb(95, 95, 95);
+    margin: 0 0 0 20px;
+    background-color: #041436;
     color: black;
     border-radius: 10px;
-    opacity: 0.8;
     font-size: 12px;
     font-weight: bold;
     transition: 0.5s all;
 }
 
 .full3 .full3_boardmenu:hover {
-    border: 1px solid rgb(136, 136, 136);
-    width: 340px;
+    width: 280px;
     height: 340px;
     box-shadow: -10px 10px 15px black;
-    background-color: rgb(189, 189, 189);
+    background-color: #041436;
     color: white;
     opacity: 1;
 }
@@ -291,27 +307,27 @@ ul, li{
     border-bottom: 1px solid black;
 }
 
-.full3 h3{
-    color: black;
+.full3 .full_title{
+    color: white;
     margin-top: 20px;
     text-align: center;
 }
 
 .full3 h5{
-    color: black;
+    color: white;
     padding: 10px 0;
 }
 
 .full3 small {
-    color: black;
+    color: white;
 }
 
 .full3 span {
-    color: black;
+    color: white;
 }
 
-.full3 a {
-    color: black;
+.full3_board a {
+    color: white;
 }
 
 /* footer */

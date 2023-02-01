@@ -2,7 +2,7 @@
         <div class="footer_body">
             <div class="footer_title">
                 <img src="http://<?= $_SERVER['HTTP_HOST']?>/Web_project/myweb/img/concert.png">
-                <h3>MusicTicket<p>&copy 2022~2023</p></h3>
+                <h3 class="footer">MusicTicket<p>&copy 2022~2023</p></h3>
             </div>
             <div class="footer_one">
                 <p>Developer : Jang gun woong</p>

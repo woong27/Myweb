@@ -48,7 +48,7 @@ table, th, td {
 }
 
 .check_section2::-webkit-scrollbar-thumb {
-    background: rgb(49, 21, 135);
+    background: #041436;
     border-radius: 1em;
 }
 
@@ -125,7 +125,7 @@ th {
 }
 
 .concert_section::-webkit-scrollbar-thumb {
-    background: rgb(49, 21, 135);
+    background: #041436;
     border-radius: 1em;
 }
 

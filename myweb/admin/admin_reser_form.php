@@ -71,7 +71,7 @@
                         <td class="num8"><?=$price?></td>
                         <td class="num9"><?=$card?></td>
                         <td class="num10"><?=$regist_day?></td>
-                        <td class="col_button"><button type="submit" onclick="location.href='admin_member_DUI.php?mode=reser_delete&num=<?=$num?>'">예매취소</button></td>
+                        <td class="col_button"><button type="submit" onclick="location.href='admin_con_delete.php?mode=reser_delete&num=<?=$num?>'">예매취소</button></td>
                     </tr>	
                 <?php
                         $number--;

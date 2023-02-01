@@ -31,6 +31,7 @@
                     location.href = 'admin.php';
                 </script>
             ";
+            break;
         }
         case 'delete': {
             $num   = $_GET["num"];
@@ -38,6 +39,7 @@
 
             mysqli_query($con, $sql);
             mysqli_close($con);
+            break;
         }
         case 'board_delete': {
             $num_item = 0;
@@ -71,6 +73,7 @@
                 mysqli_query($con, $sql);
             }
             mysqli_close($con);
+            break;
         }
 
         case 'concert_delete': {
@@ -97,7 +100,7 @@
                 $copied_name = $row["file_copied"];
 
                 if ($copied_name) {
-                    $file_path = "../data/".$copied_name;
+                    $file_path = "../condata/".$copied_name;
                     unlink($file_path);
                 }
 
@@ -105,15 +108,7 @@
                 mysqli_query($con, $sql);
             }
             mysqli_close($con);
-        }
-        case 'reser_delete': {
-            $num   = $_GET["num"];
-            $sql = "delete from ticket_reservation where num = $num";
-
-            mysqli_query($con, $sql);
-            mysqli_close($con);
-            header("location: admin_reser_form.php");
-            exit();
+            break;
         }
     }
     header("location: admin.php");

@@ -221,92 +221,118 @@
         </div>
         <!-- page THREE -->
         <div class="fullsection full3" pageNum="3">
-            <div class="full3_menubody">
-                <?php
-                    include $_SERVER['DOCUMENT_ROOT'] . "/Web_project/myweb/db/db.php";
-
-                    if (isset($_GET["page"])) {
-                        $page = $_GET["page"];
-                    } else {
-                        $page = 1;
-                    }
-
-                    $sql = "select * from ticket_reservation where id='$user_id' order by num asc";
-                    $result = mysqli_query($con, $sql);
-                    $total_record = mysqli_num_rows($result);
-                
-                    $number = $total_record;
-                    while ($row = mysqli_fetch_array($result)) {
-                        $num = $row["num"];
-                        $user_id = $row["id"];
-                        $title = $row["title"];
-                        $artist = $row["artist"];
-                        $reser_day = $row["reser_day"];
-                        $regist_day = $row["regist_day"];
-                        $regist_day = substr($regist_day, 0, 10)
-                ?>
-                <?php
-                        $number--;
-                    }
-                    mysqli_close($con);
-                ?>
-                <div class="full3_resermenu">
-                    <h3>My Concert</h3>
-                    <div class="resermenu_content">
-                        <h5><?=$artist?></h5>
-                        <h5><?=$title?></h5>
-                        <h5>예매날짜 : <?=$reser_day?></h5>
-                    </div>
-                    <small>최근 예매 내역입니다.</small>
+            <div class="full3_body">
+                <div class="content_body">
+                    <h1 class="full3_title">Members Only</h1>
+                    <p class="full3_content">We offer the best service for concert reservations. This page is for members only. If you want to see more information, please sign up for more information.</p>
                 </div>
-                
-                <div class="full3_boardmenu">
-                    <h3>내가 쓴 글</h3>
-                    <div class="board_body">
-                        <?php 
-                            include $_SERVER['DOCUMENT_ROOT'] . "/Web_project/myweb/db/db.php";
+            
+                <div class="full3_menubody">
+                    <?php
+                        include $_SERVER['DOCUMENT_ROOT'] . "/Web_project/myweb/db/db.php";
 
-                            if (isset($_GET["page"])) {
-                                $page = $_GET["page"];
-                            } else {
-                                $page = 1;
-                            }
+                        if (isset($_GET["page"])) {
+                            $page = $_GET["page"];
+                        } else {
+                            $page = 1;
+                        }
 
-                            $sql = "select * from image_board where id='$user_id' order by num asc limit 4";
-                            $result = mysqli_query($con, $sql);
-                            $total_record = mysqli_num_rows($result);
-                        
-                            $number = $total_record;
-
-                            $list = array();
-                            $i = 0;
-                            while ($row = mysqli_fetch_array($result)) {
-                                $list[$i] = $row;
-                                $num = $row["num"];
-                                $user_nick = $row["nick"];
-                                $subject = $row["subject"];
-                                $regist_day = $row["regist_day"];
-                                $regist_day = substr($regist_day, 0, 10)
-                        ?>	
-                        <div class="full3_board">
-                            <span><?=$user_nick?></span>
-                            <span>
-                                <a href="http://<?= $_SERVER['HTTP_HOST']?>/Web_project/myweb/board/imageboard_view.php?num=<?=$list[$i]['num']?>&page=<?=$page?>"><?=$subject?>
-                                </a>
-                            </span> 
-                            <span><?=$regist_day?></span>
-                        </div>
-                        <?php
+                        $sql = "select * from ticket_reservation where id='$user_id' order by num asc";
+                        $result = mysqli_query($con, $sql);
+                        $total_record = mysqli_num_rows($result);
+                    
+                        $number = $total_record;
+                        while ($row = mysqli_fetch_array($result)) {
+                            $num = $row["num"];
+                            $user_id = $row["id"];
+                            $title = $row["title"];
+                            $artist = $row["artist"];
+                            $reser_day = $row["reser_day"];
+                            $regist_day = $row["regist_day"];
+                            $regist_day = substr($regist_day, 0, 10);
                             $number--;
                         }
-                        ?>
+                        mysqli_close($con);
+                        if(!$user_id || !$total_record){
+                    ?>
+
+                    <div class="full3_resermenu">
+                        <h3 class="full_title">My Concert</h3>
+                        <div class="resermenu_content">
+                            <h5>로그인후 이용해주세요</h5>
+                        </div>
                     </div>
+                    <div class="full3_boardmenu">
+                        <h3 class="full_title">내가 쓴 글</h3>
+                        <div class="resermenu_content">
+                            <h3 class="full_title">로그인후 이용해주세요</h3>
+                        </div>
+                    </div>
+
+                    <?php
+                        }else {     
+                    ?>
+
+                    <div class="full3_resermenu">
+                        <h3 class="full_title">My Concert</h3>
+                        <div class="resermenu_content">
+                            <h5><?=$artist?></h5>
+                            <h5><?=$title?></h5>
+                            <h5>예매날짜 : <?=$reser_day?></h5>
+                        </div>
+                        <small>최근 예매 내역입니다.</small>
+                    </div>
+                    
+                    <div class="full3_boardmenu">
+                        <h3 class="full_title">내가 쓴 글</h3>
+                        <div class="board_body">
+                            <?php 
+                                include $_SERVER['DOCUMENT_ROOT'] . "/Web_project/myweb/db/db.php";
+
+                                if (isset($_GET["page"])) {
+                                    $page = $_GET["page"];
+                                } else {
+                                    $page = 1;
+                                }
+
+                                $sql = "select * from image_board where id='$user_id' order by num asc limit 4";
+                                $result = mysqli_query($con, $sql);
+                                $total_record = mysqli_num_rows($result);
+                            
+                                $number = $total_record;
+
+                                $list = array();
+                                $i = 0;
+                                while ($row = mysqli_fetch_array($result)) {
+                                    $list[$i] = $row;
+                                    $num = $row["num"];
+                                    $user_nick = $row["nick"];
+                                    $subject = $row["subject"];
+                                    $regist_day = $row["regist_day"];
+                                    $regist_day = substr($regist_day, 0, 10)
+                            ?>	
+                            <div class="full3_board">
+                                <span><?=$user_nick?></span>
+                                <span>
+                                    <a href="http://<?= $_SERVER['HTTP_HOST']?>/Web_project/myweb/board/imageboard_view.php?num=<?=$list[$i]['num']?>&page=<?=$page?>"><?=$subject?>
+                                    </a>
+                                </span> 
+                                <span><?=$regist_day?></span>
+                            </div>
+                            <?php
+                                $number--;
+                            }
+                            ?>
+                        </div>
+                    </div>  
+                    <?php
+                        }
+                    ?>
                 </div>
             </div>
-
             <footer>
                 <?php include $_SERVER['DOCUMENT_ROOT'] . "/Web_project/myweb/form/footer.php"?>
-            </footer>
+            </footer>       
         </div>
     </section>
     <!-- ==section== -->

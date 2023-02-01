@@ -29,7 +29,7 @@ header {
 
 .header_login {
     height: 50px;
-    background-color: rgb(17, 17, 17);
+    background-color: #041436;
     text-align: end;
     font-size: 20px;
     padding: 0 60px;
@@ -164,8 +164,9 @@ header {
     height: 50px;
 }
 
-.footer_title h3 {
+.footer_title .footer {
     padding: 10px 0 0 20px;
+    color: white;
 }
 
 .footer_title p {
