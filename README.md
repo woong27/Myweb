@@ -17,7 +17,7 @@ PHP,JavaScript,CSS를 사용하여 호텔사이트 제작
 ## 개발 기간
 2023-01-12 ~ 2023-01-17
 
-##Database 모델링
+## Database 모델링
 ![20230201_142529](https://user-images.githubusercontent.com/115531864/215959203-e03594b1-b207-4e15-9b17-de39a19f26aa.png)
 
 ## 화면 구성 및 기능
